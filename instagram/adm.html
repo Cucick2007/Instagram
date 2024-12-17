@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonte e estilização -->
+    <link href="https://fonts.cdnfonts.com/css/helvetica-255" rel="stylesheet">
+    <link rel="stylesheet" href="adm.css">
+    <title>Administração de Usuários</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="linkAdm">Deixar Administração</a>
+    </header>
+
+         <div class="header">
+            <h1 id="h1">Administração de Usuários</h1>
+            <img src="img/logo.png" class="logo">
+         </div>
+
+        <fieldset class="fieldsetAdm">
+            <h2>Digite o dado desejado</h2>
+
+            <input id="inputUsuarioBusca" placeholder="Usuario" type="text">
+            <br>
+
+            <input id="inputSenhaAtualizar" placeholder="Senha" type="text">
+            <br>
+
+            <input id="inputNomeAtualizar" placeholder="Nome" type="text">
+            <br>
+
+            <input id="inputEmailAtualizar" placeholder=" Celular ou Email" type="text">
+
+            <br><br>
+
+            <button onclick="buscarDados()">Procurar</button>
+            <button onclick="atualizarDados()">Atualizar</button>
+            <button onclick="deletarCadastro()">Excluir</button>
+        </fieldset>
+
+        <div class="admin-container">
+       
+
+            <section class="table-container">
+                <h2>Usuários Cadastrados</h2>
+                <table id="tabela-usuarios">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Usuario</th>
+                            <th>Senha</th>
+                            <th>Nome</th>
+                            <th>Celular ou Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableCadastros"></tbody>
+                </table>
+            </section>
+    </div>
+
+    <footer></footer>
+
+    <script>
+        fetch("http://localhost:3000/pessoas")
+    .then(resposta => resposta.json())
+    .then(dados => {
+        
+        var tabelaCorpo = document.getElementById("tableCadastros");
+        tabelaCorpo.innerHTML = ""
+
+        dados.forEach(objeto => {
+            var tr = document.createElement('tr');
+            var tdId = document.createElement('td');
+            var tdUsuario = document.createElement('td');
+            var tdNome = document.createElement('td');
+            var tdEmail = document.createElement('td');
+            var tdSenha = document.createElement('td');
+
+            tdId.innerHTML = objeto.id;
+            tdUsuario.innerHTML = objeto.usuario;
+            tdNome.innerHTML = objeto.nome;
+            tdEmail.innerHTML = objeto.email;
+            tdSenha.innerHTML = objeto.senha;
+
+            tr.appendChild(tdId);
+            tr.appendChild(tdUsuario);
+            tr.appendChild(tdSenha);
+            tr.appendChild(tdNome);
+            tr.appendChild(tdEmail);
+
+            tabelaCorpo.appendChild(tr);
+        });
+    })
+    </script>
+
+<script src="script.js"></script>
+</body>
+</html>

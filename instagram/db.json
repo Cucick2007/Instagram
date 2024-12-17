@@ -1,0 +1,32 @@
+{
+  "pessoas": [
+    {
+      "id": "1",
+      "usuario": "sasazam._",
+      "senha": "ddsdds",
+      "nome": "Sara Garcia Camporelli",
+      "email": "sasa_17@gmail.com"
+    },
+    {
+      "id": "2",
+      "usuario": "gigizao_2",
+      "senha": "ffgffg",
+      "nome": "Giulia Lorenzo de Machado Goes",
+      "email": "giu.goes@gmail.com"
+    },
+    {
+      "id": "3",
+      "usuario": "matt_f1",
+      "senha": "ccccpp",
+      "nome": "Mathias Gustavo Fidel Pessoa",
+      "email": "mathi_pess3@gmail.com"
+    },
+    {
+      "id": "4",
+      "usuario": "negodaZL_",
+      "senha": "nego0",
+      "nome": "Ricardo de Souza Diniz",
+      "email": "ricardo.souzz@gmail.com"
+    }
+  ]
+}

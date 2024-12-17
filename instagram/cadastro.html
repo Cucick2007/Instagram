@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonte e estilização -->
+    <link href="https://fonts.cdnfonts.com/css/helvetica-255" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastre-se • Instagram</title>
+</head>
+
+<body>
+    <header></header>
+
+    <fieldset>
+        <img src="img/logo.png" id="logo">
+        <p>Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
+        <br>
+        <button> <a href="">Entrar com o Facebook</a> </button>
+
+        <div class="div-teste">
+            <div id="linha"></div>
+            <h5>ou</h5>
+            <div id="linha"></div>
+        </div>
+
+        <form>
+            <input id="email" placeholder="Número do celular ou email" type="text">
+            <br>
+
+            <input id="senha" placeholder="Senha" type="password">
+            <br>
+
+            <input id="nome" placeholder="Nome completo" type="text">
+            <br>
+
+            <input id="usuario" placeholder="Nome de usuário" type="text">
+            <br>
+
+            <p>
+                As pessoas que usam nosso serviço podem ter enviado suas
+                informações de contato para o Instagram.
+                <a href=""> Saiba mais</a>
+            </p>
+            <p>
+                Ao se cadastrar, você concorda com nossos
+                <a href="">Termos, Política de Privacidade e Política de Cookies.</a>
+            </p>
+
+            <button onclick="enviarDados()">Cadastre-se</button>
+            <br><br>
+        </form>
+    </fieldset>
+
+    <fieldset class="box">
+        <p>Tem uma conta? <a href="index.html">Conecte-se</a></p>
+    </fieldset>
+
+    <div class="apps">
+        <span>
+            Obtenha o aplicativo.
+        </span>
+
+        <a
+            href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3DF1091F7F-0B4A-49AA-AA55-902D0F8493D3%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps%253A%252F%252Fwww.google.com%252F&pli=1">
+            <img src="https://static.cdninstagram.com/rsrc.php/v4/y_/r/tUzYKZ-xrQK.png" alt="Baixe no Google Play">
+        </a>
+
+        <a
+            href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=0%2C0%2C1920%2C1040">
+            <img src="https://static.cdninstagram.com/rsrc.php/v4/yE/r/QQnPXT5YsC4.png" alt="Baixar na Microsoft">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

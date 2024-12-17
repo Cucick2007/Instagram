@@ -1,0 +1,225 @@
+/* Tirar a edição automática do navegador */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    padding: 30px;
+}
+
+.header {
+    text-align: center;
+}
+
+.box {
+    margin-left: 0;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Fieldset principal */
+fieldset {
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Logo */
+#logo {
+    width: 175px;
+    padding-top: 45px;
+    margin-bottom: 35px;
+}
+
+/* Descrição inicial */
+#tabela-usuarios {
+    background-color: #e2e2e29a;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Botão do Facebook */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #165db3;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+button a:hover {
+    text-decoration: none;
+}
+
+.botao-pesquisa {
+    margin: 7px;
+}
+
+.sair {
+    text-decoration: none;
+    color: rgb(8, 39, 39);
+    margin-right: 50px;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+/* linhas e "ou" */
+.div-teste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#linha {
+    flex: 1;
+    border-top: 1px solid #dbdbdb;
+    height: 0;
+    margin: 0 10px;
+}
+
+h5 {
+    font-size: 12px;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12px;
+    color: #8e8e8e;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+/* Texto explicativo */
+form p {
+    font-size: 13px;
+    color: #8e8e8e;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 13px;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+form p a {
+    color: #00376b;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de cadastro */
+form button {
+    background-color: #0095f6;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0073c9;
+}
+
+/* Link de login */
+fieldset:last-of-type p {
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+fieldset:last-of-type p a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+fieldset:last-of-type p a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de aplicativos */
+.apps {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.apps span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.apps a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.apps img {
+    width: 135px;
+    height: auto;
+}
+
+h2 {
+    padding-top: 10px;
+}
+.th {
+    padding: 20px;
+}v
+footer {
+    padding: 10vh;
+}
